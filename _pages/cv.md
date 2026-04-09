@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,55 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+[📄 Download PDF (English)]({{ base_path }}/files/cv-english.pdf) &nbsp;|&nbsp; [📄 下载中文版简历]({{ base_path }}/files/cv-chinese.pdf)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+---
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**M.Eng. in Mechanics** — *Sep 2024 – Present*  
+University of Science and Technology of China (USTC), Hefei, China  
+- Advisor: Assoc. Prof. Fenghua Qin (Department of Modern Mechanics)  
+- Research: Propulsion hydrodynamics of tandem undulating fins  
+- Key Courses: Advanced Fluid Mechanics, Computational Fluid Dynamics, Experimental Fluid Mechanics, GPU Parallel Computing
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**B.Eng. in Naval Architecture & Ocean Engineering** — *Sep 2020 – Jun 2024*  
+Harbin Engineering University (HEU), Harbin, China — **Outstanding Graduate (优秀毕业生)**  
+- Thesis: *Wave Loads and Green Water Impact of a Trimaran in Irregular Waves*  
+- Advisor: Assoc. Prof. Xuhui Li  
+- GPA: 89.1 / 100 &nbsp;·&nbsp; Rank 13 / 191  
+- Key Courses: Engineering Mathematical Analysis, Linear Algebra & Analytic Geometry, Probability & Statistics, Complex Analysis, Fluid Mechanics for Naval Architecture
+
+---
+
+## Publications
+
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% for post in publications %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+
+---
+
+## Research Projects
+
+{% for post in site.portfolio %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+
+---
+
+## Skills
+
+**Programming Languages**  
+Python (proficient), C++ (proficient), Fortran (familiar), MATLAB (familiar)
+
+**CFD & Simulation Tools**  
+OpenLB (Lattice Boltzmann), OpenFOAM, Ansys Fluent, Ansys AQWA, CATIA
+
+**Engineering & HPC Tools**  
+Git, Docker, SLURM, MPI/OpenMP parallel computing, LaTeX, Typst
+
+**Languages**  
+- Mandarin: Native  
+- English: CET-6 — 588 pts; proficient in academic writing and international conference presentations
