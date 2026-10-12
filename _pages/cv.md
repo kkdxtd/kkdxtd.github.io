@@ -53,11 +53,11 @@ Harbin Engineering University (HEU), Harbin, China — **Outstanding Graduate (�
 Python (proficient), C++ (proficient), Fortran (familiar), MATLAB (familiar)
 
 **CFD & Simulation Tools**  
-OpenLB (Lattice Boltzmann), OpenFOAM, Ansys Fluent, Ansys AQWA, CATIA
+Palabos (LBM), AMReX (AMR), STAR-CCM+, ANSYS Fluent, OpenFOAM, ParaView, Tecplot, SolidWorks
 
 **Engineering & HPC Tools**  
-Git, Docker, SLURM, MPI/OpenMP parallel computing, LaTeX, Typst
+Git, Docker, SLURM (HPC), Linux, MPI/GPU parallel computing, LaTeX, Typst
 
 **Languages**  
 - Mandarin: Native  
-- English: CET-6 — 588 pts; proficient in academic writing and international conference presentations
+- English: IELTS 6.0, CET-6 passed; proficient in academic literature reading and scientific writing

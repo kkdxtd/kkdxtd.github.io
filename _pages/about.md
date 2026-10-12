@@ -13,10 +13,11 @@ Prior to USTC, I obtained my B.Eng. in Naval Architecture & Ocean Engineering fr
 
 ## Research Interests
 
-- Biologically inspired propulsion (undulating fins, fish-like locomotion)
-- Computational Fluid Dynamics (CFD) — Lattice Boltzmann, OpenLB
-- Hydrodynamic performance analysis of marine structures
-- Wave loads on multi-hull vessels
+- Biologically inspired propulsion (undulating fins, vortex dynamics, energy harvesting)
+- Computational Fluid Dynamics (CFD) — Lattice Boltzmann Method (LBM, Palabos), Immersed Boundary Method (IBM)
+- High-Performance Computing (HPC) & Adaptive Mesh Refinement (AMReX)
+- Hydrodynamic performance & slamming wave loads on marine structures
+- Quantum Computing applied to CFD (Quantum LBM)
 
 ## Education
 
@@ -39,13 +40,13 @@ Advisor: Assoc. Prof. Xuhui Li
 | Domain | Details |
 |--------|---------|
 | **Programming** | Python (proficient), C++ (proficient), Fortran (familiar), MATLAB (familiar) |
-| **CFD & Simulation** | OpenLB, OpenFOAM, Fluent (Ansys), CATIA |
-| **Engineering Tools** | Git, Docker, SLURM (HPC), LaTeX / Typst |
-| **Languages** | Mandarin (native), English — CET-6 588 pts, proficient in academic writing & presentations |
+| **CFD & Solvers** | Palabos (LBM), AMReX (AMR), STAR-CCM+, ANSYS Fluent, OpenFOAM, ParaView, Tecplot, SolidWorks |
+| **Engineering Tools** | Git, Docker, SLURM (HPC), Linux, LaTeX / Typst |
+| **Languages** | Mandarin (native), English — IELTS 6.0, CET-6 passed, proficient in academic literature reading and scientific writing |
 
 ## Contact
 
-- **Email:** liwenzhuo [at] mail.ustc.edu.cn
+- **Email:** wlz02 [at] mail.ustc.edu.cn
 - **Phone:** +86 197-2024-0940
 - **GitHub:** [github.com/kkdxtd](https://github.com/kkdxtd)
 - **Address:** Department of Modern Mechanics, USTC, 96 Jinzhai Road, Hefei 230026, China
