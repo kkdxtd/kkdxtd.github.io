@@ -6,10 +6,15 @@ permalink: /publication/2026-tandem-undulating-fins
 excerpt: 'Systematic numerical investigation on hydrodynamic coupling and wake vortex interference of tandem undulating fins using Lattice Boltzmann Method (Palabos), Large Eddy Simulation (LES), and Immersed Boundary Method (IBM), proposing a novel Equivalent Phase Model.'
 date: 2026-01-01
 venue: 'Ocean Engineering'
-paperurl:
+paperurl: '/files/papers/2026-tandem-undulating-fins.pdf'
 bibtexurl:
 citation: '<b>Wenzhuo Li</b>, Ming Xu, Shunxiang Pang, Fenghua Qin, Jun Jing, Wan Cheng, Xisheng Luo. &quot;Optimized design and investigation about propulsion of bionic Tandem undulating fins II: The coupled effect of phase difference and fin spacing.&quot; <i>Ocean Engineering</i>, 2026. (Under Review)'
 ---
+
+<div class="pub-action-links" style="margin: 10px 0 16px 0;">
+  <a href="/files/papers/2026-tandem-undulating-fins.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF (Full Manuscript)</a>
+  <span class="badge badge--warning" style="margin-left: 6px;"><i class="fas fa-clock"></i> Under Review (Elsevier)</span>
+</div>
 
 This study systematically investigates the hydrodynamic coupling and wake interference mechanisms of **tandem undulating fins** under a pure undulation mode, inspired by the high maneuverability and stealth of gymnotiform and balistiform fish locomotion.
 
