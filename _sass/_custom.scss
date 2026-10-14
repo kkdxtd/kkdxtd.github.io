@@ -244,24 +244,64 @@ body {
 /* --------------------------------------------------------------------------
    5. Sidebar Profile Polish (Home page only)
    -------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+  #main:not(.layout--no-sidebar) {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 2.2rem !important;
+
+    .sidebar {
+      flex-shrink: 0 !important;
+      width: 240px !important;
+      max-width: 240px !important;
+      float: none !important;
+      margin: 0 !important;
+    }
+
+    .page {
+      flex: 1 1 auto !important;
+      width: calc(100% - 280px) !important;
+      max-width: none !important;
+      float: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
 .sidebar {
+  overflow-x: hidden !important; /* Disables all horizontal scrollbars */
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+
   @media screen and (min-width: 1024px) {
     position: sticky !important;
     top: 60px !important; /* 48px slim masthead + 12px clearance */
+    width: 240px !important;
+    max-width: 240px !important;
     height: calc(100vh - 60px) !important;
     padding-top: 0.5rem !important;
+    padding-right: 0.25rem !important;
     margin-top: 0 !important;
+    scrollbar-width: none; /* Hide scrollbars in Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Hide scrollbars in Chrome/Safari */
+    }
   }
 }
 
 .author__avatar {
   margin-top: 0.35rem;
+  width: 100% !important;
 
   img {
+    max-width: 165px !important;
     border-radius: 50%;
     border: 3px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
 
     &:hover {
       transform: scale(1.03);
@@ -270,26 +310,79 @@ body {
   }
 }
 
+.author__content {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 .author__name {
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-top: 0.5em;
+  margin-top: 0.6em;
   margin-bottom: 0.3em;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
 }
 
 .author__bio {
   font-size: 0.9rem;
   line-height: 1.55;
   color: var(--global-text-color-light);
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.author__urls-wrapper {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
 }
 
 .author__urls.social-icons {
-  li {
-    font-size: 0.88rem;
-    padding: 3px 0;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0.8rem 0 0 0 !important;
+  list-style: none !important;
 
+  li {
+    width: 100% !important;
+    font-size: 0.88rem;
+    padding: 4px 0 !important;
+    line-height: 1.45 !important;
+    white-space: normal !important; /* Allow long text to wrap to next line */
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    color: var(--global-text-color);
+    box-sizing: border-box !important;
+
+    /* Fixed-width icons cleanly aligned on the left */
+    i, svg {
+      flex-shrink: 0 !important;
+      width: 16px !important;
+      text-align: center !important;
+      margin-top: 0.2em !important;
+      color: var(--global-text-color-light);
+    }
+
+    /* Links inside li wrap naturally */
     a {
       color: var(--global-text-color);
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      word-break: normal !important;
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      line-height: 1.45 !important;
       transition: color 0.2s ease;
 
       &:hover {
