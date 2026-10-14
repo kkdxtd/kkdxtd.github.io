@@ -109,150 +109,91 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   4. Modern Redesigned Masthead & Top Navigation Bar
+   4. Clean, Compact Top Navigation Bar (Small Navbar, No Dropdown, No Avatar)
    -------------------------------------------------------------------------- */
 .masthead {
   border-bottom: 1px solid var(--global-border-color);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   background-color: var(--global-bg-color);
   position: sticky;
   top: 0;
   z-index: 50;
 
-  &::after {
-    display: none; /* remove legacy after element */
-  }
-
   &__inner-wrap {
-    padding: 0.55rem 1.25rem;
+    padding: 0.6em 1.2em;
   }
 }
 
-/* Brand Link */
-.site-brand-link {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  text-decoration: none !important;
-  margin-left: 0 !important;
-
-  .brand-avatar-mini img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1.5px solid var(--global-base-color);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    vertical-align: middle;
-  }
-
-  .brand-title {
-    font-weight: 700;
-    font-size: 1.05rem;
-    letter-spacing: -0.02em;
-    color: var(--global-text-color);
-  }
-
-  .brand-cn {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--global-text-color-light);
-    background: var(--global-badge-bg);
-    border: 1px solid var(--global-card-border);
-    padding: 2px 6px;
-    border-radius: 4px;
-    line-height: 1.3;
-  }
-}
-
-/* Segmented Pill Tabs in greedy-nav */
 .greedy-nav {
-  background: transparent !important;
+  /* Ensure hamburger dropdown button is hidden on desktop screens */
+  @media screen and (min-width: 600px) {
+    button {
+      display: none !important;
+    }
+    .hidden-links {
+      display: none !important;
+    }
+  }
 
   .visible-links {
-    display: flex !important;
-    align-items: center !important;
-    gap: 4px;
+    /* Keep native table layout so widths calculate accurately */
+    display: table;
 
     li {
-      display: inline-flex !important;
-      align-items: center !important;
+      display: table-cell;
+      vertical-align: middle;
 
-      &.masthead__menu-item--lg {
-        margin-right: auto !important;
+      &.masthead__menu-item--lg a {
+        font-weight: 700;
+        font-size: 1.08rem;
+        letter-spacing: -0.01em;
+        color: var(--global-text-color);
+        margin-right: 1.5rem;
       }
     }
 
     a {
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px !important;
-      padding: 0.38rem 0.82rem !important;
-      margin: 0 !important;
-      font-size: 0.9rem !important;
-      font-weight: 500 !important;
-      color: var(--global-masthead-link-color) !important;
-      border-radius: 8px !important;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-
-      &::before {
-        display: none !important; /* Remove old underline */
-      }
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--global-masthead-link-color);
+      transition: color 0.2s ease, border-color 0.2s ease;
+      padding: 0.4em 0;
+      margin: 0 0.85rem;
 
       &:hover {
-        background: var(--global-badge-bg) !important;
-        color: var(--global-base-color) !important;
-      }
-
-      .nav-icon {
-        font-size: 0.85rem;
-        opacity: 0.85;
+        color: var(--global-base-color);
       }
     }
 
-    /* Active selected pill */
+    /* Selected Active Link: elegant colored indicator line */
     .masthead__menu-item.selected a {
-      background: var(--global-tag-bg) !important;
-      color: var(--global-tag-text) !important;
-      font-weight: 600 !important;
-      border-bottom: none !important;
-      box-shadow: var(--global-shadow-sm);
+      color: var(--global-base-color) !important;
+      font-weight: 600;
+      border-bottom: 2px solid var(--global-base-color) !important;
+      pointer-events: none;
+      cursor: default;
     }
-  }
 
-  /* Round Theme Toggle Button */
-  #theme-toggle {
-    margin-left: 0.4rem !important;
+    #theme-toggle {
+      a {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 0.85rem;
+        transition: transform 0.25s ease;
 
-    .theme-toggle-link {
-      width: 34px !important;
-      height: 34px !important;
-      border-radius: 50% !important;
-      background: var(--global-badge-bg) !important;
-      border: 1px solid var(--global-card-border) !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      padding: 0 !important;
-      color: var(--global-text-color) !important;
-      cursor: pointer;
-      transition: all 0.2s ease !important;
-
-      &:hover {
-        border-color: var(--global-base-color) !important;
-        transform: rotate(20deg) scale(1.08) !important;
-      }
-
-      #theme-icon {
-        font-size: 0.95rem;
+        &:hover {
+          transform: rotate(20deg);
+          color: var(--global-base-color);
+        }
       }
     }
   }
 }
 
 /* --------------------------------------------------------------------------
-   5. Sidebar Profile Polish (Home page)
+   5. Sidebar Profile Polish (Home page only)
    -------------------------------------------------------------------------- */
 .author__avatar {
   img {
