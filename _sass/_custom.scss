@@ -148,30 +148,34 @@ body {
       }
     }
 
-    /* Retro Pixel wlz Logo (Silkscreen 10px) */
+    /* Retro Pixel wlz Logo (Silkscreen 30px) */
     a.site-brand-logo {
       font-family: 'Silkscreen', monospace, sans-serif !important;
-      font-size: 10px !important;
+      font-size: 30px !important;
       font-weight: 700 !important;
-      letter-spacing: 0.08em !important;
+      letter-spacing: 0.05em !important;
       background: linear-gradient(135deg, var(--global-base-color) 0%, #818cf8 100%) !important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
       color: var(--global-base-color) !important;
       border-bottom: none !important;
       text-decoration: none !important;
-      padding: 2px 4px !important;
+      padding: 0 4px !important;
       margin: 0 !important;
       display: inline-block !important;
-      line-height: 1.2 !important;
+      line-height: 1 !important;
       pointer-events: auto !important;
       cursor: pointer !important;
       transition: transform 0.2s ease, opacity 0.2s ease !important;
 
       &:hover {
-        transform: scale(1.15);
-        opacity: 0.85;
+        transform: scale(1.08);
+        opacity: 0.9;
         border-bottom: none !important;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 24px !important;
       }
     }
 
