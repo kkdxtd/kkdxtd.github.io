@@ -1,8 +1,15 @@
 ---
 title: "Propulsion Performance of Tandem Undulating Fins"
-excerpt: "Computational and experimental study on the hydrodynamic performance of biologically inspired tandem undulating fin propulsion systems."
+excerpt: "Computational and experimental study on the hydrodynamic performance of biologically inspired tandem undulating fin propulsion systems using Palabos (LBM), IBM, and LES."
 collection: portfolio
+puburl: '/publication/2026-tandem-undulating-fins'
+paperurl: '/files/papers/2026-tandem-undulating-fins.pdf'
 ---
+
+<div class="project-action-links" style="margin: 12px 0 20px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a href="/publication/2026-tandem-undulating-fins" class="btn btn--primary btn--small"><i class="fas fa-book-open"></i> Associated Paper: Ocean Engineering (2026)</a>
+  <a href="/files/papers/2026-tandem-undulating-fins.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download Manuscript (PDF)</a>
+</div>
 
 ## Overview
 

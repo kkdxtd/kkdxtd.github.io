@@ -1,8 +1,11 @@
-# main links
+# main navigation links
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Projects"
+    icon: "fas fa-book-open"
+  - title: "Projects & CFD"
     url: /portfolio/
+    icon: "fas fa-flask-vial"
   - title: "CV"
     url: /cv/
+    icon: "fas fa-file-lines"

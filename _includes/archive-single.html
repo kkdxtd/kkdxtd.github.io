@@ -69,8 +69,11 @@
       {% if post.slidesurl %}
         <a href="{{ post.slidesurl }}" class="btn btn--warning btn--small" target="_blank" style="margin: 0;"><i class="fas fa-file-powerpoint"></i> Slides</a>
       {% endif %}
-      {% if post.bibtexurl %}
-        <a href="{{ post.bibtexurl }}" class="btn btn--inverse btn--small" target="_blank" style="margin: 0;"><i class="fas fa-quote-right"></i> BibTeX</a>
+      {% if post.projecturl %}
+        <a href="{{ post.projecturl }}" class="btn btn--primary btn--small" style="margin: 0;"><i class="fas fa-diagram-project"></i> Related Project</a>
+      {% endif %}
+      {% if post.puburl %}
+        <a href="{{ post.puburl }}" class="btn btn--primary btn--small" style="margin: 0;"><i class="fas fa-book-open"></i> Related Publication</a>
       {% endif %}
       <a href="{{ base_path }}{{ post.url }}" class="btn btn--info btn--small" style="margin: 0;"><i class="fas fa-circle-info"></i> Details</a>
     </div>

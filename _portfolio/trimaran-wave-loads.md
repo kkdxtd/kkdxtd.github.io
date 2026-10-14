@@ -2,7 +2,14 @@
 title: "Wave Loads and Green Water Impact of a Trimaran in Irregular Waves"
 excerpt: "Undergraduate thesis: Numerical investigation of wave-induced loads and green water phenomena on a trimaran hull in irregular sea conditions."
 collection: portfolio
+puburl: '/publication/2024-trimaran-seakeeping'
+paperurl: '/files/papers/2024-trimaran-seakeeping-cfd.pdf'
 ---
+
+<div class="project-action-links" style="margin: 12px 0 20px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a href="/publication/2024-trimaran-seakeeping" class="btn btn--primary btn--small"><i class="fas fa-book-open"></i> Associated Conference Paper (2024)</a>
+  <a href="/files/papers/2024-trimaran-seakeeping-cfd.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download Paper (PDF)</a>
+</div>
 
 ## Overview
 

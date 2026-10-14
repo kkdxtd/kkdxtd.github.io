@@ -8,14 +8,16 @@ date: 2024-10-01
 venue: 'Physics of Fluids'
 paperurl: '/files/papers/2024-iamrex-physics-of-fluids.pdf'
 codeurl: 'https://github.com/hswind4/IAMReX'
+projecturl: '/portfolio/iamrex-solver'
 doi: 'https://doi.org/10.1063/5.0236509'
 bibtexurl:
 citation: 'Xuzhu Li, Chun Li, Xiaokai Li, <b>Wenzhuo Li</b>, Mingze Tang, Yadong Zeng, Zhengping Zhu. &quot;An open-source, adaptive solver for particle-resolved simulations with both subcycling and non-subcycling methods.&quot; <i>Physics of Fluids</i>, 2024. DOI: 10.1063/5.0236509'
 ---
 
-<div class="pub-action-links" style="margin: 10px 0 16px 0;">
+<div class="pub-action-links" style="margin: 10px 0 16px 0; display: flex; flex-wrap: wrap; gap: 8px;">
   <a href="/files/papers/2024-iamrex-physics-of-fluids.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a>
   <a href="https://github.com/hswind4/IAMReX" class="btn btn--inverse btn--small" target="_blank"><i class="fab fa-github"></i> IAMReX GitHub</a>
+  <a href="/portfolio/iamrex-solver" class="btn btn--primary btn--small"><i class="fas fa-diagram-project"></i> Related Solver Project</a>
   <a href="https://doi.org/10.1063/5.0236509" class="btn btn--info btn--small" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
 </div>
 

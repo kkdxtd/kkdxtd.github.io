@@ -8,14 +8,16 @@ date: 2025-01-15
 venue: 'Journal of Open Source Software'
 paperurl: '/files/papers/2025-iamrex-joss.pdf'
 codeurl: 'https://github.com/hswind4/IAMReX'
+projecturl: '/portfolio/iamrex-solver'
 doi: 'https://doi.org/10.21105/joss.08080'
 bibtexurl:
 citation: 'Chun Li, Xuzhu Li, Yiliang Wang, Dewen Liu, Shuai He, Boqiao Huang, Haoran Cheng, Xiaokai Li, <b>Wenzhuo Li</b>, Mingze Tang, Zhengping Zhu, Yadong Zeng. &quot;IAMReX: an adaptive framework for the multiphase flow and fluid–particle interaction problems.&quot; <i>Journal of Open Source Software</i>, 2025. DOI: 10.21105/joss.08080'
 ---
 
-<div class="pub-action-links" style="margin: 10px 0 16px 0;">
+<div class="pub-action-links" style="margin: 10px 0 16px 0; display: flex; flex-wrap: wrap; gap: 8px;">
   <a href="/files/papers/2025-iamrex-joss.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a>
   <a href="https://github.com/hswind4/IAMReX" class="btn btn--inverse btn--small" target="_blank"><i class="fab fa-github"></i> IAMReX GitHub</a>
+  <a href="/portfolio/iamrex-solver" class="btn btn--primary btn--small"><i class="fas fa-diagram-project"></i> Related Solver Project</a>
   <a href="https://doi.org/10.21105/joss.08080" class="btn btn--info btn--small" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
 </div>
 

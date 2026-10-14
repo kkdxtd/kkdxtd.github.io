@@ -2,7 +2,16 @@
 title: "IAMReX: Open-Source Adaptive Solver for Particle-Resolved DNS"
 excerpt: "Contributed to the development of IAMReX, an open-source high-performance solver for particle-resolved direct numerical simulations with adaptive mesh refinement."
 collection: portfolio
+puburl: '/publication/2024-iamrex-solver'
+paperurl: '/files/papers/2024-iamrex-physics-of-fluids.pdf'
+codeurl: 'https://github.com/hswind4/IAMReX'
 ---
+
+<div class="project-action-links" style="margin: 12px 0 20px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a href="/publication/2024-iamrex-solver" class="btn btn--primary btn--small"><i class="fas fa-book-open"></i> Associated Paper: Physics of Fluids (2024)</a>
+  <a href="/files/papers/2024-iamrex-physics-of-fluids.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a>
+  <a href="https://github.com/hswind4/IAMReX" class="btn btn--inverse btn--small" target="_blank"><i class="fab fa-github"></i> IAMReX GitHub</a>
+</div>
 
 ## Overview
 

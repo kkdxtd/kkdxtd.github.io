@@ -2,36 +2,38 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
-  {% for post in sorted_pubs %}
+<div class="page-intro-banner">
+  <p style="font-size: 1.05rem; line-height: 1.7; color: var(--global-text-color-light); margin-bottom: 0.8rem;">
+    A complete record of published, under-review, and peer-reviewed research papers in bionic underwater propulsion, high-performance adaptive solvers (AMReX), and marine hydrodynamics. All manuscripts provide direct PDF downloads and links to associated CFD simulation projects.
+  </p>
+  <div class="quick-badge-bar" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+    <span class="q-badge"><i class="fas fa-file-signature"></i> 1 Manuscript Under Review (1st Author · Ocean Eng.)</span>
+    <span class="q-badge"><i class="fas fa-cube"></i> 2 Journal Papers on IAMReX (PoF, JOSS)</span>
+    <span class="q-badge"><i class="fas fa-water"></i> 1 Conference Paper (Seakeeping CFD)</span>
+    <span class="q-badge"><i class="fas fa-chart-line"></i> 1 Marine Structure Paper (Applied Ocean Research)</span>
+  </div>
+</div>
+
+## Journal Manuscripts & Articles (期刊论文)
+
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% for post in sorted_pubs %}
+  {% if post.category != 'conferences' %}
     {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  {% endif %}
+{% endfor %}
 
+---
 
+## Conference Proceedings & Symposia (学术会议论文)
 
+{% for post in sorted_pubs %}
+  {% if post.category == 'conferences' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}

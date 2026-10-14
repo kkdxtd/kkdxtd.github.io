@@ -7,7 +7,13 @@ tags:
   - UDF
   - Dynamic Mesh
   - Bionic Propulsion
+puburl: '/publication/2026-tandem-undulating-fins'
 ---
+
+<div class="project-action-links" style="margin: 12px 0 20px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+  <a href="/portfolio/tandem-undulating-fins" class="btn btn--primary btn--small"><i class="fas fa-diagram-project"></i> Primary Palabos LBM Project</a>
+  <a href="/publication/2026-tandem-undulating-fins" class="btn btn--inverse btn--small"><i class="fas fa-book-open"></i> Associated Paper: Ocean Engineering</a>
+</div>
 
 ## Overview
 

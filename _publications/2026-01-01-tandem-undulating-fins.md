@@ -7,12 +7,14 @@ excerpt: 'Systematic numerical investigation on hydrodynamic coupling and wake v
 date: 2026-01-01
 venue: 'Ocean Engineering'
 paperurl: '/files/papers/2026-tandem-undulating-fins.pdf'
+projecturl: '/portfolio/tandem-undulating-fins'
 bibtexurl:
 citation: '<b>Wenzhuo Li</b>, Ming Xu, Shunxiang Pang, Fenghua Qin, Jun Jing, Wan Cheng, Xisheng Luo. &quot;Optimized design and investigation about propulsion of bionic Tandem undulating fins II: The coupled effect of phase difference and fin spacing.&quot; <i>Ocean Engineering</i>, 2026. (Under Review)'
 ---
 
-<div class="pub-action-links" style="margin: 10px 0 16px 0;">
+<div class="pub-action-links" style="margin: 10px 0 16px 0; display: flex; flex-wrap: wrap; gap: 8px;">
   <a href="/files/papers/2026-tandem-undulating-fins.pdf" class="btn btn--danger btn--small" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF (Full Manuscript)</a>
+  <a href="/portfolio/tandem-undulating-fins" class="btn btn--primary btn--small"><i class="fas fa-diagram-project"></i> Related CFD Project: Tandem Fins</a>
   <span class="badge badge--warning" style="margin-left: 6px;"><i class="fas fa-clock"></i> Under Review (Elsevier)</span>
 </div>
 
