@@ -1,7 +1,8 @@
 ---
 title: "Optimized design and investigation about propulsion of bionic Tandem undulating fins II: The coupled effect of phase difference and fin spacing"
 collection: publications
-category: manuscripts
+category: under_review
+status: under_review
 permalink: /publication/2026-tandem-undulating-fins
 excerpt: 'Systematic numerical investigation on hydrodynamic coupling and wake vortex interference of tandem undulating fins using Lattice Boltzmann Method (Palabos), Large Eddy Simulation (LES), and Immersed Boundary Method (IBM), proposing a novel Equivalent Phase Model.'
 date: 2026-01-01

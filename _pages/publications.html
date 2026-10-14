@@ -7,33 +7,38 @@ author_profile: false
 
 {% include base_path %}
 
-<div class="page-intro-banner">
-  <p style="font-size: 1.05rem; line-height: 1.7; color: var(--global-text-color-light); margin-bottom: 0.8rem;">
-    A complete record of published, under-review, and peer-reviewed research papers in bionic underwater propulsion, high-performance adaptive solvers (AMReX), and marine hydrodynamics. All manuscripts provide direct PDF downloads and links to associated CFD simulation projects.
-  </p>
-  <div class="quick-badge-bar" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
-    <span class="q-badge"><i class="fas fa-file-signature"></i> 1 Manuscript Under Review (1st Author · Ocean Eng.)</span>
-    <span class="q-badge"><i class="fas fa-cube"></i> 2 Journal Papers on IAMReX (PoF, JOSS)</span>
-    <span class="q-badge"><i class="fas fa-water"></i> 1 Conference Paper (Seakeeping CFD)</span>
-    <span class="q-badge"><i class="fas fa-chart-line"></i> 1 Marine Structure Paper (Applied Ocean Research)</span>
-  </div>
+<div class="quick-badge-bar" style="margin-top: 0.2rem; margin-bottom: 2rem;">
+  <a href="#journal-papers" class="q-badge"><i class="fas fa-book-open"></i> Journal Papers (3)</a>
+  <a href="#conference-papers" class="q-badge"><i class="fas fa-users"></i> Conference Papers (1)</a>
+  <a href="#under-review-manuscripts" class="q-badge"><i class="fas fa-clock"></i> Under Review Manuscripts (1)</a>
 </div>
 
-## Journal Manuscripts & Articles (期刊论文)
-
 {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+
+<h2 id="journal-papers">Journal Papers</h2>
+
 {% for post in sorted_pubs %}
-  {% if post.category != 'conferences' %}
+  {% if post.category != 'conferences' and post.category != 'under_review' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
----
+<hr style="margin: 2.5rem 0 1.8rem 0; border: 0; border-top: 1px solid var(--global-border-color);" />
 
-## Conference Proceedings & Symposia (学术会议论文)
+<h2 id="conference-papers">Conference Papers</h2>
 
 {% for post in sorted_pubs %}
   {% if post.category == 'conferences' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<hr style="margin: 2.5rem 0 1.8rem 0; border: 0; border-top: 1px solid var(--global-border-color);" />
+
+<h2 id="under-review-manuscripts">Under Review Manuscripts</h2>
+
+{% for post in sorted_pubs %}
+  {% if post.category == 'under_review' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
