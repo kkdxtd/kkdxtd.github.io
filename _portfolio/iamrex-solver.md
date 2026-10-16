@@ -5,7 +5,7 @@ collection: portfolio
 period: "2023 – 2024"
 institution: "Open-Source Collaborator"
 status: "Published Solver"
-order: 3
+order: 2
 puburl: '/publication/2024-iamrex-solver'
 paperurl: '/files/papers/2024-iamrex-physics-of-fluids.pdf'
 codeurl: 'https://github.com/hswind4/IAMReX'

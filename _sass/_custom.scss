@@ -416,6 +416,12 @@ body {
     font-size: 1.15rem;
     font-weight: 700;
     line-height: 1.42;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+
+    &::after {
+      display: none !important;
+    }
 
     a {
       color: var(--global-text-color);

@@ -5,7 +5,7 @@ collection: portfolio
 period: "Sep 2023 – Jun 2024"
 institution: "HEU (Undergraduate Thesis)"
 status: "Completed (Grade: Excellent)"
-order: 4
+order: 3
 puburl: '/publication/2024-trimaran-seakeeping'
 paperurl: '/files/papers/2024-trimaran-seakeeping-cfd.pdf'
 ---

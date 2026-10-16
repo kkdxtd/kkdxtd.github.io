@@ -5,7 +5,7 @@ collection: portfolio
 period: "Upcoming / In Planning"
 institution: "Reserved Showcase"
 status: "Reserved Slot"
-order: 5
+order: 4
 tags:
   - Free-Surface Flow
   - Slamming Loads

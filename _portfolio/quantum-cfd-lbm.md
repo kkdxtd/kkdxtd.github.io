@@ -5,7 +5,7 @@ collection: portfolio
 period: "Upcoming / Literature Tracking"
 institution: "Reserved Showcase"
 status: "Reserved Slot"
-order: 6
+order: 5
 tags:
   - Quantum CFD
   - Lattice Boltzmann Method
