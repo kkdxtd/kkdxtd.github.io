@@ -3,11 +3,13 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist">
-            <a href="{{ base_path }}/" class="site-brand-logo">wlz</a>
-          </li>
+        <button class="hidden" style="display: none !important;"><span class="navicon"></span></button>
+        
+        <div class="masthead__brand">
+          <a href="{{ base_path }}/" class="site-brand-logo">wlz</a>
+        </div>
+
+        <ul class="visible-links masthead__center-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -18,11 +20,15 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+
+        <div class="masthead__right-actions">
+          <div id="theme-toggle" class="theme-toggle-btn">
+            <a role="button" aria-labelledby="theme-icon" title="Toggle dark/light mode"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <ul class="hidden-links hidden" style="display: none !important;"></ul>
       </nav>
     </div>
   </div>

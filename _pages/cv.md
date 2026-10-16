@@ -9,12 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="cv-download-bar" style="display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0 25px 0;">
+<div class="cv-download-bar" style="display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0 10px 0;">
   <a href="{{ base_path }}/files/cv-english.pdf" class="btn btn--primary" target="_blank"><i class="fas fa-file-pdf"></i> Download CV (English)</a>
   <a href="{{ base_path }}/files/cv-chinese.pdf" class="btn btn--info" target="_blank"><i class="fas fa-file-pdf"></i> 下载中文版简历 (PDF)</a>
   <a href="{{ base_path }}/files/transcripts/graduate-transcript-ustc-en.pdf" class="btn btn--success" target="_blank"><i class="fas fa-graduation-cap"></i> USTC Graduate Transcript (EN)</a>
   <a href="{{ base_path }}/files/transcripts/undergraduate-transcript-heu-en.pdf" class="btn btn--warning" target="_blank"><i class="fas fa-award"></i> HEU Undergraduate Transcript (EN)</a>
 </div>
+
+<p style="font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0; margin-bottom: 22px;">
+  <i class="fas fa-shield-halved" style="color: var(--global-base-color); margin-right: 4px;"></i> All downloadable CVs and transcripts are watermarked for application verification and document security.
+</p>
 
 ---
 
