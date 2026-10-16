@@ -45,6 +45,7 @@
             <p><span class="status-badge status-badge--review" style="vertical-align: middle; margin-right: 6px;"><i class="fas fa-clock"></i> Under Review</span> Submitted to <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
           {% else %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% endif %}
         {% elsif post.collection == 'portfolio' %}
           {% if post.period %}
             <p class="page__meta" style="margin: 0.25rem 0 0.5rem 0; font-size: 0.88rem; color: var(--global-text-color-light);">
