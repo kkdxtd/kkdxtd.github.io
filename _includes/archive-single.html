@@ -45,6 +45,17 @@
             <p><span class="status-badge status-badge--review" style="vertical-align: middle; margin-right: 6px;"><i class="fas fa-clock"></i> Under Review</span> Submitted to <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
           {% else %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'portfolio' %}
+          {% if post.period %}
+            <p class="page__meta" style="margin: 0.25rem 0 0.5rem 0; font-size: 0.88rem; color: var(--global-text-color-light);">
+              <i class="fa fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.period }}
+              {% if post.institution %}
+                &nbsp;·&nbsp; <span>{{ post.institution }}</span>
+              {% endif %}
+              {% if post.status %}
+                &nbsp;·&nbsp; <span class="status-badge {% if post.status contains 'Active' or post.status contains 'Present' %}status-badge--review{% elsif post.status contains 'Reserved' or post.status contains 'Upcoming' %}status-badge--reserved{% else %}status-badge--published{% endif %}" style="font-size: 0.72rem; vertical-align: middle;">{{ post.status }}</span>
+              {% endif %}
+            </p>
           {% endif %}
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>

@@ -2,6 +2,10 @@
 title: "Propulsion Performance of Tandem Undulating Fins"
 excerpt: "Computational and experimental study on the hydrodynamic performance of biologically inspired tandem undulating fin propulsion systems using Palabos (LBM), IBM, and LES."
 collection: portfolio
+period: "Sep 2024 – Present"
+institution: "USTC"
+status: "Active"
+order: 1
 puburl: '/publication/2026-tandem-undulating-fins'
 paperurl: '/files/papers/2026-tandem-undulating-fins.pdf'
 ---

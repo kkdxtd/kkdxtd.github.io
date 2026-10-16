@@ -7,27 +7,26 @@ author_profile: false
 
 {% include base_path %}
 
-<p style="font-size: 1.05rem; line-height: 1.7; color: var(--global-text-color-light); margin-bottom: 1.8rem;">
-  A showcase of my computational fluid dynamics (CFD) simulations, high-performance computing (HPC) solver development, and marine hydrodynamic investigations across multiple numerical platforms (Palabos, AMReX, ANSYS Fluent, STAR-CCM+, and OpenFOAM).
-</p>
+<div class="quick-badge-bar" style="margin-top: 0.2rem; margin-bottom: 2rem;">
+  <a href="#cfd-projects" class="q-badge"><i class="fas fa-cubes"></i> Active & Published Projects (4)</a>
+  <a href="#reserved-projects" class="q-badge"><i class="fas fa-layer-group"></i> Reserved Showcase Slots (2)</a>
+</div>
 
-## Active & Published CFD Projects
+{% assign sorted_projects = site.portfolio | sort: 'order' %}
 
-{% for post in site.portfolio %}
+<h2 id="cfd-projects">Active & Published CFD Projects</h2>
+
+{% for post in sorted_projects %}
   {% unless post.path contains "quantum" or post.path contains "multiphase" %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
 
----
+<hr style="margin: 2.5rem 0 1.8rem 0; border: 0; border-top: 1px solid var(--global-border-color);" />
 
-## Upcoming & Reserved CFD Showcase Slots (预留展示位)
+<h2 id="reserved-projects">Reserved Showcase Slots</h2>
 
-<p style="font-size: 0.95rem; color: var(--global-text-color-light); margin-bottom: 1.2rem;">
-  These slots are reserved for upcoming numerical simulations and frontier research directions in quantum CFD and violent free-surface hydrodynamics.
-</p>
-
-{% for post in site.portfolio %}
+{% for post in sorted_projects %}
   {% if post.path contains "quantum" or post.path contains "multiphase" %}
     {% include archive-single.html %}
   {% endif %}

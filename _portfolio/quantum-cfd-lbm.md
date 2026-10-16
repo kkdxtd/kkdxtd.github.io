@@ -2,6 +2,10 @@
 title: "Quantum Computing Algorithms for Lattice Boltzmann Method (Reserved)"
 excerpt: "Exploring quantum algorithm formulations (Quantum LBM / Quantum Linear Systems) for accelerated fluid dynamic simulations on future quantum hardware architectures."
 collection: portfolio
+period: "Upcoming / Literature Tracking"
+institution: "Reserved Showcase"
+status: "Reserved Slot"
+order: 6
 tags:
   - Quantum CFD
   - Lattice Boltzmann Method

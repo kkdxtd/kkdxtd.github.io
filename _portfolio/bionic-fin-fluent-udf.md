@@ -2,6 +2,10 @@
 title: "Multi-Solver CFD: Dynamic Mesh & UDF Simulation of Bionic Fins"
 excerpt: "Unsteady flow simulation of undulating fin propulsion using ANSYS Fluent with custom C++ UDFs for dynamic mesh generation and kinematic boundary conditions."
 collection: portfolio
+period: "2024 – Present"
+institution: "USTC"
+status: "Completed Study"
+order: 2
 tags:
   - ANSYS Fluent
   - UDF

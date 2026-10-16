@@ -37,7 +37,18 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'portfolio' %}
+          {% if page.period %}
+            <p class="page__meta" style="font-size: 0.95rem; color: var(--global-text-color-light); margin-top: 0.35rem; margin-bottom: 0.75rem;">
+              <i class="fa fa-fw fa-calendar-alt" aria-hidden="true"></i> <strong>Period:</strong> {{ page.period }}
+              {% if page.institution %}
+                &nbsp;·&nbsp; <span>{{ page.institution }}</span>
+              {% endif %}
+              {% if page.status %}
+                &nbsp;·&nbsp; <span class="status-badge {% if page.status contains 'Active' or page.status contains 'Present' %}status-badge--review{% elsif page.status contains 'Reserved' or page.status contains 'Upcoming' %}status-badge--reserved{% else %}status-badge--published{% endif %}" style="font-size: 0.75rem; vertical-align: middle;">{{ page.status }}</span>
+              {% endif %}
+            </p>
+          {% endif %}
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    

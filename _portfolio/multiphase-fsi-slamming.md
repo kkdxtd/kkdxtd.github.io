@@ -2,6 +2,10 @@
 title: "Hydrodynamic Slamming & Violent Free-Surface FSI (Reserved)"
 excerpt: "Numerical simulation of violent free-surface wave impact, slamming wave loads, and non-linear fluid–structure interactions on high-speed marine and offshore structures."
 collection: portfolio
+period: "Upcoming / In Planning"
+institution: "Reserved Showcase"
+status: "Reserved Slot"
+order: 5
 tags:
   - Free-Surface Flow
   - Slamming Loads
