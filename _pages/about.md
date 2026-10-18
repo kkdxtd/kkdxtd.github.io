@@ -10,9 +10,7 @@ redirect_from:
 <div class="quick-badge-bar">
   <span class="q-badge"><i class="fas fa-graduation-cap"></i> USTC Mechanics (M.Eng.)</span>
   <span class="q-badge"><i class="fas fa-anchor"></i> HEU Naval Architecture (Top 7%)</span>
-  <span class="q-badge"><i class="fas fa-water"></i> Bionic Fin Propulsion & IBM</span>
-  <span class="q-badge"><i class="fas fa-microchip"></i> Palabos (LBM) & AMReX</span>
-  <span class="q-badge status-pill-phd"><i class="fas fa-bullseye"></i> Seeking Overseas PhD (Fall 2026)</span>
+  <span class="q-badge status-pill-phd"><i class="fas fa-bullseye"></i> Seeking Overseas PhD (Fall 2027)</span>
 </div>
 
 I am a first-year graduate student pursuing my Master of Engineering in Mechanics at the **Department of Modern Mechanics**, [University of Science and Technology of China (USTC)](https://en.ustc.edu.cn/), advised by [Assoc. Prof. Fenghua Qin](https://en.mecheng.ustc.edu.cn/). My research focuses on the **propulsion hydrodynamics of biologically inspired tandem undulating fins**, utilizing high-resolution Computational Fluid Dynamics (CFD) and theoretical modeling to uncover wake vortex interactions and energy-harvesting mechanisms.
